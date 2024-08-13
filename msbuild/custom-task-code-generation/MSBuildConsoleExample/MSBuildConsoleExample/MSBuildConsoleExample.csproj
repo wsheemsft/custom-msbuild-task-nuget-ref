@@ -6,7 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="AppSettingStronglyTyped" Version="1.0.0" PrivateAssets="All"/>
+        <PackageReference Include="AppSettingStronglyTyped" Version="2.0.0" PrivateAssets="All"/>
     </ItemGroup>
 
     <PropertyGroup>

@@ -28,6 +28,8 @@
 		       Include="Microsoft.Extensions.DependencyInjection"
     		   Version="6.0.0"
            PrivateAssets="all" />
+	   <PackageReference Include="Serilog" Version="4.0.1" PrivateAssets="all" />
+	   <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" PrivateAssets="all" />
     </ItemGroup>
 
     <ItemGroup>

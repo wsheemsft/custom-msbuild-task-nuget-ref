@@ -1,5 +1,6 @@
 ﻿using Microsoft.Build.Framework;
 using Microsoft.Build.Utilities;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -27,6 +28,11 @@ namespace AppSettingStronglyTyped
 
         public override bool Execute()
         {
+            using (var log = new LoggerConfiguration().WriteTo.Console().CreateLogger())
+            {
+                log.Information("Hello, Serilog!");
+            }
+                
             //Read the input files and return a IDictionary<string, object> with the properties to be created.
             //Any format error it will return not succeed and Log.LogError properly
             var (success, settings) = ReadProjectSettingFiles();
